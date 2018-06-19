@@ -3,10 +3,12 @@ scalaVersion := "2.11.12"
 libraryDependencies ++= spark ++ logging ++ scalatest ++ scalacheck
 
 lazy val spark = {
-  val version = "2.3.0"
+  val version = "2.3.1"
   Seq(
-    "org.apache.spark" %% "spark-sql" % version,
+//    "org.apache.spark" %% "spark-sql" % version,
     "org.apache.spark" %% "spark-streaming" % version
+//    "org.apache.hadoop" % "hadoop-aws" % "2.7.3",
+//    "com.amazonaws" % "aws-java-sdk" % "1.7.4"
   )
 }
 
